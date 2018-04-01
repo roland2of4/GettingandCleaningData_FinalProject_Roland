@@ -1,5 +1,6 @@
 # GettingandCleaningData_FinalProject_Roland
 Coursera GettingandCleaningData_FinalProject_Roland
+
 ##Merges the training and the test sets to create one data set for each type of info
 ##Combine all the Subject data, then Activity data, then Features data, ending up with 3 tables
 dataSubject <- rbind(dataSubjectTrain, dataSubjectTest)
