@@ -9,7 +9,7 @@ names(dataActivity)<- c("activity")
 names(dataFeatures)<- dataFeaturesNames$V2
 ## merge columns into one dataframe
 Data<- cbind(dataSubject, dataActivity, dataFeatures)
-#find only column names containing "mean()" and "std()" in them. Now below has 68 vars.
+##find only column names containing "mean()" and "std()" in them. Now below has 68 vars.
 namesMeanStdOnly <- grep("mean\\(\\)|std\\(\\)",dataFeaturesNames$V2,value=TRUE)
 ## put back together with SubjectActivity
 namesSubjectActivity<-c(as.character(namesMeanStdOnly), "subject", "activity" )
